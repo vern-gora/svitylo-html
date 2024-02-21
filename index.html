@@ -3,36 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>SVITYLO</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./svg/favicons" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/svg/favicons" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./svg/favicons/favicon-32x32.png"
+      href="/svg/favicons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./svg/favicons/favicon-16x16.png"
+      href="/svg/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="./svg/favicons/site.webmanifest" />
+    <link rel="manifest" href="/svg/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="./svg/favicons/safari-pinned-tab.svg"
+      href="/svg/favicons/safari-pinned-tab.svg"
       color="#fdac0d"
     />
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
     <!-- <script type="module" src="./index.js"></script> -->
-    <script src="https://unpkg.com/lodash@4.17.20"></script>
+    <!-- <script src="https://unpkg.com/lodash@4.17.20"></script> -->
   </head>
   <body>
-    <h1>hell0</h1>
-    <script src="./js/index.js"></script>
+    <header>
+      <div>
+        <nav>
+          <a href="#home"><img src="./image/01.jpg" alt="logo" /></a>
+          <ul>
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#gallery">Фото</a></li>
+            <li><a href="#size">Розміри</a></li>
+            <li><a href="#form">Замовити</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul>
+            <li>
+              <a href="tel:+380992431494"
+                ><svg width="32" height="32">
+                  <use href="./svg/sprite.svg#icon-phone"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:7694373@gmail.com"
+                ><svg width="30" height="40">
+                  <use href="./svg/sprite.svg#icon-email"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">
+            Деякі митці зображують сонце жовтою плямою, інші ж перетворюють
+            жовту пляму на сонце. (Пабло Пікассо)
+          </h1>
+          <a class="hero-btn btn" href="#form"> Замовити люстру </a>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <!-- <script src="/js/index.js"></script> -->
   </body>
 </html>
