@@ -41,41 +41,50 @@
     <!-- <script src="https://unpkg.com/lodash@4.17.20"></script> -->
   </head>
   <body>
-    <header>
-      <div>
-        <nav>
-          <a href="#home"><img src="./image/01.jpg" alt="logo" /></a>
-          <ul>
-            <li><a class="a-btn" href="#home">Головна</a></li>
-            <li><a class="a-btn" href="#about">Про нас</a></li>
-            <li><a class="a-btn" href="#gallery">Фото</a></li>
-            <li><a class="a-btn" href="#size">Розміри</a></li>
-            <li><a class="a-btn" href="#form">Замовити</a></li>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a class="header-logo link" href="#home"
+            ><img src="./image/01.jpg" alt="logo" ;
+          /></a>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="a-btn header-link link" href="#about">Про нас</a>
+            </li>
+            <li class="header-item">
+              <a class="a-btn header-link link" href="#gallery">Фото</a>
+            </li>
+            <li class="header-item">
+              <a class="a-btn header-link link" href="#size">Розміри</a>
+            </li>
+            <li class="header-item">
+              <a class="a-btn header-link link" href="#form">Замовити</a>
+            </li>
           </ul>
         </nav>
-        <address>
-          <ul>
-            <li>
-              <a href="tel:+380992431494"
-                ><svg width="32" height="32">
+        <address class="header-adress">
+          <ul class="adress-list list">
+            <li class="adress-item">
+              <a class="adress-link link" href="tel:+380992431494"
+                ><svg class="adress-link-icon" width="32" height="32">
                   <use href="./svg/sprite.svg#icon-phone"></use></svg
               ></a>
             </li>
-            <li>
-              <a href="mailto:7694373@gmail.com"
-                ><svg width="30" height="40">
+            <li class="adress-item">
+              <a class="adress-link link" href="mailto:7694373@gmail.com"
+                ><svg class="adress-link-icon" width="32" height="32">
                   <use href="./svg/sprite.svg#icon-email"></use></svg
               ></a>
             </li>
-            <li>
-              <a href="https://www.facebook.com/"
-                ><svg width="32" height="30">
+            <li class="adress-item">
+              <a class="adress-link link" href="https://www.facebook.com/"
+                ><svg class="adress-link-icon" width="32" height="32">
                   <use href="./svg/sprite.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li>
-              <a href="https://www.instagram.com/"
-                ><svg width="32" height="32">
+            <li class="adress-item">
+              <a class="adress-link link" href="https://www.instagram.com/"
+                ><svg class="adress-link-icon" width="32" height="32">
                   <use href="./svg/sprite.svg#icon-instagram"></use></svg
               ></a>
             </li>
@@ -86,6 +95,13 @@
     <main>
       <section id="hero" class="hero">
         <div class="container hero-container">
+          <video
+            src="./video/hero(1).mp4"
+            class="video-hero"
+            loop="loop"
+            autoplay=""
+            muted=""
+          ></video>
           <h1 class="hero-title">
             Деякі митці зображують сонце жовтою плямою, інші ж перетворюють
             жовту пляму на сонце. (Пабло Пікассо)
@@ -401,14 +417,10 @@
           <p>
             &copy; <span id="currentYear"></span> SVITYLO. Усі права захищено.
           </p>
-          <script>
-            document.getElementById("currentYear").textContent =
-              new Date().getFullYear();
-          </script>
         </div>
       </div>
     </footer>
 
-    <!-- <script src="/js/index.js"></script> -->
+    <script src="./js/index.js"></script>
   </body>
 </html>
