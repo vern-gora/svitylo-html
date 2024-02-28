@@ -32,7 +32,7 @@
 :root {
   /* COLORS */
   --deep-black: #111111;
-  --soft-black: #202024;
+  --transparent: rgba(0, 0, 0, 1);
   --red: brown;
   --yellow: #eac645;
   --white: #ffffff;
