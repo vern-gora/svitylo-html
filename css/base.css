@@ -32,8 +32,8 @@
 :root {
   /* COLORS */
   --deep-black: #111111;
-  --transparent: rgba(0, 0, 0, 1);
-  --red: brown;
+  --transparent: rgba(0, 0, 0, 0);
+  --red: rgb(165, 42, 42);
   --yellow: #eac645;
   --white: #ffffff;
   --backdrop-color: #11111166;
